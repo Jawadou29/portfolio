@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+  --main-red: #f44336;
+  --light-red: #e57373;
+  --dark-red: #d32f2f;
+  --dark-color: white;
+  --white-color: white;
+  --black-color: black;
+  --text-color-black: black;
+  --text-color-white: white;
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+body.dark{
+  --main-red: #f44336;
+  --light-red: #d32f2f;
+  --dark-red: #e57373;
+  --dark-color: #101418;
+  --white-color: black;
+  --black-color: white;
+  --text-color-black: #ccc;
+  --text-color-white: black;
+  background-color: var(--dark-color);
+  color: var(--black-color);
+}
+.container{
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (min-width: 767px) {
+    width: 700px;
+  }
+  @media (min-width: 992px) {
+    width: 980px;
+  }
+  @media (min-width: 1200px) {
+    width: 1190px;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-red);
+  border-radius: 5px;
+  border: 1px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-red);
+}
+
+.hide{
+  opacity: 0;
+  transition: 0.2s;
+  transform: translateX(-40px);
+}
+.show{
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,45 @@
+.projects {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    .project {
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      .text{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+        .info{
+          flex-grow: 1;
+        }
+        .title{
+          color: var(--main-red);
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: capitalize;
+        }
+        p{
+          color: var(--text-color-black);
+          line-height: 1.8;
+          height: 100%;
+        }
+        a{
+          // width: fit-content;
+          display: block;
+        }
+
+      }
+    }
+  }
+}

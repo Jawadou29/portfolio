@@ -1,0 +1,102 @@
+.navbar{
+  padding: 10px 0;
+  .overlay.show{
+    background-color: rgba(0, 0, 0, 0.581);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    @media (max-width: 992px) {
+      padding: 10px;
+    }
+    .logo{
+      color: var(--white-color);
+      font-weight: bold;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: var(--main-red);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+    ul{
+      display: flex;
+      li{
+        a{
+          text-transform: capitalize;
+          padding: 0 20px;
+          color: var(--text-color-black);
+          border-bottom: 2px solid transparent;
+          display: block;
+          padding: 20px;
+          &:hover, &.active{
+            color: var(--main-red);
+            border-bottom: 2px solid var(--main-red);
+          }
+        }
+      }
+      .close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        color: var(--text-color-black);
+        cursor: pointer;
+        display: none;
+        &:hover{
+          color: var(--black-color);
+        }
+        @media (max-width: 992px) {
+          display: block;
+        }
+      }
+      @media (max-width: 992px) {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        background-color: var(--dark-color);
+        border-right: 1px solid var(--black-color);
+        min-height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        padding-top: 50px;
+        left: -310px;
+        transition: 0.5s;
+        z-index: 99999;
+        &.show{
+          left: 0;
+        }
+      }
+    }
+    div{
+      display: flex;
+      align-items: center;
+    }
+    .mode{
+      margin-left: 20px;
+      font-size: 20px;
+      color: var(--black-color);
+      cursor: pointer;
+    }
+    .bars{
+      color: var(--black-color);
+      font-size: 25px;
+      cursor: pointer;
+      display: none;
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+  }
+}
