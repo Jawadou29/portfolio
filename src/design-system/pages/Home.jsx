@@ -22,7 +22,7 @@ function Home() {
             <img src={img1} alt="" />
           </div>
           <h1 className="hide">
-            hi i'm <span>jawad</span>
+            hi i'm <span>jawaddddddd</span>
           </h1>
           <p className="hide">
             Hello, I'm Jawad Ouhdou from Morocco, a self-taught front-end developer 
