@@ -4,16 +4,20 @@ import "../style/pages/home.scss";
 import MainBtn from "../components/MainBtn";
 import MainBtn2 from "../components/MainBtn2";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect} from "react";
 function Home() {
   useEffect(() => {
-    let elements = document.querySelectorAll(".hide")
+    let elements = document.querySelectorAll(".hide");
     elements.forEach((ele, index) => {
       setTimeout(() => {
         ele.classList.add("show");
       }, 500 + index * 300);
     });
-  }, [])
+  }, []);
+  const handleButtonClick = () => {
+    // window.location.href = 'https://drive.google.com/file/d/1EO1exOsdceZKDLGXAfTgihIW8JQR0at2/view?usp=drive_link';
+    console.log("jawad")
+  };
   return (
     <div className="homepage">
       <div className="container">
@@ -22,20 +26,23 @@ function Home() {
             <img src={img1} alt="" />
           </div>
           <h1 className="hide">
-            hi i'm <span>jawaddddddd</span>
+            hi i'm <span>jawad</span>
           </h1>
           <p className="hide">
-            Hello, I'm Jawad Ouhdou from Morocco, a self-taught front-end developer 
-            passionate about creating engaging and user-friendly web experiences. With
-            a strong foundation in HTML, CSS, and JavaScript, I enjoy turning ideas
-            into reality through code. My goal is to continuously learn and grow
-            in the ever-evolving world of web development.
+            Hello, I'm Jawad Ouhdou from Morocco, a self-taught front-end
+            developer passionate about creating engaging and user-friendly web
+            experiences. With a strong foundation in HTML, CSS, and JavaScript,
+            I enjoy turning ideas into reality through code. My goal is to
+            continuously learn and grow in the ever-evolving world of web
+            development.
           </p>
           <div className="btns hide">
-              <Link to="/contact">
+            <Link to="/contact">
               <MainBtn>let's talk</MainBtn>
-              </Link>
-            <MainBtn2>download CV</MainBtn2>
+            </Link>
+            <a href="https://drive.google.com/file/d/1EO1exOsdceZKDLGXAfTgihIW8JQR0at2/view?usp=drive_link" target="blank">
+            <MainBtn2 >downloaaaad CV</MainBtn2>
+            </a>
           </div>
         </div>
         <div className="svg-img">
