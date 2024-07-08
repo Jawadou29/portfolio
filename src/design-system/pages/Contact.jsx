@@ -23,19 +23,19 @@ function Contact() {
                 <p>+212611861600</p>
               </div>
               <div className="social-media">
-                <h3>social media accounts</h3>
+                <h3>others</h3>
                 <div className="content">
-                  <a href="">
+                  {/* <a href="">
                     <img src={fb} alt="" />
                   </a>
                   <a href="">
                     <img src={insta} alt="" />
+                  </a> */}
+                  <a href="https://www.linkedin.com/in/jawad-ouhdou-023737316/" target="_blank">
+                    <img src={linkedin} alt="linkedin"/>
                   </a>
-                  <a href="">
-                    <img src={linkedin} alt="" />
-                  </a>
-                  <a href="">
-                    <img src={github} alt="" />
+                  <a href="https://github.com/Jawadou29" target="_blank">
+                    <img src={github} alt="github" />
                   </a>
                 </div>
               </div>
