@@ -1,6 +1,6 @@
 import { frontEndSkills } from "../data/skillsData";
 import { othersSlills } from "../data/skillsData";
-import { learning } from "../data/skillsData";
+import { backendSkills } from "../data/skillsData";
 import { useEffect } from "react";
 import MainTitle from "../components/MainTitle";
 import "../style/pages/skills.scss";
@@ -32,10 +32,10 @@ function Skills() {
             ))}
           </div>
         </div>
-        <div className="others">
-          <h1 attitle="others">others</h1>
+        <div className="back-end">
+          <h1 attitle="backend">back-end</h1>
           <div className="content">
-            {othersSlills.map((skill) => (
+            {backendSkills.map((skill) => (
               <div className="skill hide" key={skill.id}>
                 <div className="img">
                   <img src={skill.img} alt="" />
@@ -47,10 +47,10 @@ function Skills() {
             ))}
           </div>
         </div>
-        <div className="learning">
-          <h1 attitle="learning">learning</h1>
+        <div className="others">
+          <h1 attitle="others">others</h1>
           <div className="content">
-            {learning.map((skill) => (
+            {othersSlills.map((skill) => (
               <div className="skill hide" key={skill.id}>
                 <div className="img">
                   <img src={skill.img} alt="" />

@@ -13,7 +13,10 @@ import muiImg from "../imgs/material-ui-svgrepo-com.svg";
 import githubImg from "../imgs/github-svgrepo-com (1).svg";
 import pythonImg from "../imgs/python-com.svg";
 import phpImg from "../imgs/php-svgrepo-com.svg";
-import sqlite from "../imgs/sqlite-svgrepo-com.svg"
+import sqlite from "../imgs/sqlite-svgrepo-com.svg";
+import nodejs from "../imgs/nodejs-svgrepo-com (1).svg";
+import mongodb from "../imgs/mongo-svgrepo-com.svg";
+import flask from "../imgs/flask-svgrepo-com.svg";
 
 import cmdImg from "../imgs/terminal-svgrepo-com.svg";
 
@@ -91,6 +94,28 @@ export let frontEndSkills = [
     descript: " React components for faster and easier web development",
   }
 ];
+export const backendSkills = [
+  {
+    id: 1,
+    img: nodejs,
+    title: "node.js"
+  },
+  {
+    id: 2,
+    img: mongodb,
+    title: "mongodb"
+  },
+  {
+    id: 3,
+    img: flask,
+    title: "flask"
+  },
+  {
+    id: 4,
+    img: sqlite,
+    title: "SQLite"
+  }
+]
 export let othersSlills = [
   {
     id: 1,
@@ -109,14 +134,7 @@ export let othersSlills = [
   },
   {
     id: 4,
-    img: sqlite,
-    title: "SQLite"
-  }
-];
-export let learning = [
-  {
-    id: 1,
     img: phpImg,
     title: "php",
   }
-]
+];
