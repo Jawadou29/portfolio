@@ -17,7 +17,6 @@ import sqlite from "../imgs/sqlite-svgrepo-com.svg";
 import nodejs from "../imgs/nodejs-svgrepo-com (1).svg";
 import mongodb from "../imgs/mongo-svgrepo-com.svg";
 import flask from "../imgs/flask-svgrepo-com.svg";
-
 import cmdImg from "../imgs/terminal-svgrepo-com.svg";
 
 export let frontEndSkills = [
