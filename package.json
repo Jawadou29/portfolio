@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Jawadou29.github.io/portfolio",
+  "homepage": "https://Jawadou29/portfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
