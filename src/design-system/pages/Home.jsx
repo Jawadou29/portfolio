@@ -1,8 +1,6 @@
-import img1 from "../imgs/36-removebg.png";
 import img2 from "../imgs/Devices-cuate.svg";
 import "../style/pages/home.scss";
 import MainBtn from "../components/MainBtn";
-import MainBtn2 from "../components/MainBtn2";
 import { Link } from "react-router-dom";
 import { useEffect} from "react";
 function Home() {
@@ -14,10 +12,10 @@ function Home() {
       }, 500 + index * 300);
     });
   }, []);
-  const handleButtonClick = () => {
-    // window.location.href = 'https://drive.google.com/file/d/1EO1exOsdceZKDLGXAfTgihIW8JQR0at2/view?usp=drive_link';
-    console.log("jawad")
-  };
+  // const handleButtonClick = () => {
+  //   window.location.href = 'https://drive.google.com/file/d/1EO1exOsdceZKDLGXAfTgihIW8JQR0at2/view?usp=drive_link';
+  //   console.log("jawad")
+  // };
   return (
     <div className="homepage">
       <div className="container">
@@ -26,10 +24,10 @@ function Home() {
             {/* <img src={img1} alt="" /> */}
           </div>
           <h1 className="hide">
-            hi i'm <span>jawad</span>
+            hi i am <span>jawad</span>
           </h1>
           <p className="hide">
-            Hello, I'm Jawad Ouhdou from Morocco, a self-taught front-end
+            Hello, I am Jawad Ouhdou from Morocco, a self-taught front-end
             developer passionate about creating engaging and user-friendly web
             experiences. With a strong foundation in HTML, CSS, and JavaScript,
             I enjoy turning ideas into reality through code. My goal is to
@@ -38,11 +36,11 @@ function Home() {
           </p>
           <div className="btns hide">
             <Link to="/contact">
-              <MainBtn>let's talk</MainBtn>
+              <MainBtn>let s talk</MainBtn>
             </Link>
-            <a href="https://drive.google.com/file/d/1EO1exOsdceZKDLGXAfTgihIW8JQR0at2/view?usp=drive_link" target="blank">
+            {/* <a href="https://drive.google.com/file/d/1EO1exOsdceZKDLGXAfTgihIW8JQR0at2/view?usp=drive_link" target="blank">
             <MainBtn2 >downloaaaad CV</MainBtn2>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="svg-img">
