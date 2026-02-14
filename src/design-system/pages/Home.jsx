@@ -23,7 +23,7 @@ function Home() {
       <div className="container">
         <div className="description">
           <div className="img hide">
-            <img src={img1} alt="" />
+            {/* <img src={img1} alt="" /> */}
           </div>
           <h1 className="hide">
             hi i'm <span>jawad</span>
